@@ -151,9 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				A5AF8A3F263AEC1A006E7080 /* Raindrop */,
+				A5382D27263AF63500ECA9A0 /* RaindropTests */,
 				A5382D05263AF5D400ECA9A0 /* Persistance */,
 				A5382D12263AF5D400ECA9A0 /* PersistanceTests */,
-				A5382D27263AF63500ECA9A0 /* RaindropTests */,
 				A5AF8A3E263AEC1A006E7080 /* Products */,
 			);
 			sourceTree = "<group>";
