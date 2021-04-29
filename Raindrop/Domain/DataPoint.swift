@@ -1,5 +1,5 @@
 //
-//  CashflowDataPoint.swift
+//  DataPoint.swift
 //  Raindrop
 //
 //  Created by Mikael Weiss on 4/29/21.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CashflowDataPoint {
+class DataPoint {
     let id: UUID
     
     private(set) var date: Date
@@ -20,8 +20,8 @@ class CashflowDataPoint {
         self.description = description
     }
     
-    private(set) var type: CashflowType
-    func set(type: CashflowType) throws {
+    private(set) var type: DataPointType
+    func set(type: DataPointType) throws {
         self.type = type
     }
     
@@ -38,7 +38,7 @@ class CashflowDataPoint {
     init(id: UUID = UUID(),
          date: Date = Date(),
          description: String,
-         type: CashflowType,
+         type: DataPointType,
          category: String,
          value: Decimal) {
         

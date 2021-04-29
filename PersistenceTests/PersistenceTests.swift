@@ -1,14 +1,14 @@
 //
-//  PersistanceTests.swift
-//  PersistanceTests
+//  PersistenceTests.swift
+//  PersistenceTests
 //
 //  Created by Mikael Weiss on 4/29/21.
 //
 
 import XCTest
-@testable import Persistance
+@testable import Persistence
 
-class PersistanceTests: XCTestCase {
+class PersistenceTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
