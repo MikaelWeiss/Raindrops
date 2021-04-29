@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5382D0D263AF5D400ECA9A0 /* Persistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5382D04263AF5D400ECA9A0 /* Persistance.framework */; };
+		A5382D14263AF5D400ECA9A0 /* PersistanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5382D13263AF5D400ECA9A0 /* PersistanceTests.swift */; };
+		A5382D16263AF5D400ECA9A0 /* Persistance.h in Headers */ = {isa = PBXBuildFile; fileRef = A5382D06263AF5D400ECA9A0 /* Persistance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5382D19263AF5D400ECA9A0 /* Persistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5382D04263AF5D400ECA9A0 /* Persistance.framework */; };
+		A5382D1A263AF5D400ECA9A0 /* Persistance.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5382D04263AF5D400ECA9A0 /* Persistance.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5382D29263AF63500ECA9A0 /* RaindropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5382D28263AF63500ECA9A0 /* RaindropTests.swift */; };
 		A5AF8A41263AEC1A006E7080 /* RaindropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF8A40263AEC1A006E7080 /* RaindropApp.swift */; };
 		A5AF8A43263AEC1A006E7080 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF8A42263AEC1A006E7080 /* ContentView.swift */; };
 		A5AF8A45263AEC1B006E7080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5AF8A44263AEC1B006E7080 /* Assets.xcassets */; };
@@ -15,7 +21,61 @@
 		A5AF8A56263AF404006E7080 /* CashflowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF8A55263AF404006E7080 /* CashflowType.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A5382D0E263AF5D400ECA9A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5AF8A35263AEC1A006E7080 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5382D03263AF5D400ECA9A0;
+			remoteInfo = Persistance;
+		};
+		A5382D10263AF5D400ECA9A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5AF8A35263AEC1A006E7080 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5AF8A3C263AEC1A006E7080;
+			remoteInfo = Raindrop;
+		};
+		A5382D17263AF5D400ECA9A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5AF8A35263AEC1A006E7080 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5382D03263AF5D400ECA9A0;
+			remoteInfo = Persistance;
+		};
+		A5382D2B263AF63500ECA9A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5AF8A35263AEC1A006E7080 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5AF8A3C263AEC1A006E7080;
+			remoteInfo = Raindrop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5382D1B263AF5D400ECA9A0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A5382D1A263AF5D400ECA9A0 /* Persistance.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A5382D04263AF5D400ECA9A0 /* Persistance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Persistance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5382D06263AF5D400ECA9A0 /* Persistance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Persistance.h; sourceTree = "<group>"; };
+		A5382D07263AF5D400ECA9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5382D0C263AF5D400ECA9A0 /* PersistanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5382D13263AF5D400ECA9A0 /* PersistanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceTests.swift; sourceTree = "<group>"; };
+		A5382D15263AF5D400ECA9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5382D26263AF63500ECA9A0 /* RaindropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaindropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5382D28263AF63500ECA9A0 /* RaindropTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaindropTests.swift; sourceTree = "<group>"; };
+		A5382D2A263AF63500ECA9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5AF8A3D263AEC1A006E7080 /* Raindrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raindrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5AF8A40263AEC1A006E7080 /* RaindropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaindropApp.swift; sourceTree = "<group>"; };
 		A5AF8A42263AEC1A006E7080 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,20 +87,73 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A5AF8A3A263AEC1A006E7080 /* Frameworks */ = {
+		A5382D01263AF5D400ECA9A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5382D09263AF5D400ECA9A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5382D0D263AF5D400ECA9A0 /* Persistance.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5382D23263AF63500ECA9A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5AF8A3A263AEC1A006E7080 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5382D19263AF5D400ECA9A0 /* Persistance.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5382D05263AF5D400ECA9A0 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				A5382D06263AF5D400ECA9A0 /* Persistance.h */,
+				A5382D07263AF5D400ECA9A0 /* Info.plist */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
+		A5382D12263AF5D400ECA9A0 /* PersistanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5382D13263AF5D400ECA9A0 /* PersistanceTests.swift */,
+				A5382D15263AF5D400ECA9A0 /* Info.plist */,
+			);
+			path = PersistanceTests;
+			sourceTree = "<group>";
+		};
+		A5382D27263AF63500ECA9A0 /* RaindropTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5382D28263AF63500ECA9A0 /* RaindropTests.swift */,
+				A5382D2A263AF63500ECA9A0 /* Info.plist */,
+			);
+			path = RaindropTests;
+			sourceTree = "<group>";
+		};
 		A5AF8A34263AEC1A006E7080 = {
 			isa = PBXGroup;
 			children = (
 				A5AF8A3F263AEC1A006E7080 /* Raindrop */,
+				A5382D05263AF5D400ECA9A0 /* Persistance */,
+				A5382D12263AF5D400ECA9A0 /* PersistanceTests */,
+				A5382D27263AF63500ECA9A0 /* RaindropTests */,
 				A5AF8A3E263AEC1A006E7080 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +162,9 @@
 			isa = PBXGroup;
 			children = (
 				A5AF8A3D263AEC1A006E7080 /* Raindrop.app */,
+				A5382D04263AF5D400ECA9A0 /* Persistance.framework */,
+				A5382D0C263AF5D400ECA9A0 /* PersistanceTests.xctest */,
+				A5382D26263AF63500ECA9A0 /* RaindropTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,7 +225,73 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A5382CFF263AF5D400ECA9A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5382D16263AF5D400ECA9A0 /* Persistance.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		A5382D03263AF5D400ECA9A0 /* Persistance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5382D20263AF5D400ECA9A0 /* Build configuration list for PBXNativeTarget "Persistance" */;
+			buildPhases = (
+				A5382CFF263AF5D400ECA9A0 /* Headers */,
+				A5382D00263AF5D400ECA9A0 /* Sources */,
+				A5382D01263AF5D400ECA9A0 /* Frameworks */,
+				A5382D02263AF5D400ECA9A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Persistance;
+			productName = Persistance;
+			productReference = A5382D04263AF5D400ECA9A0 /* Persistance.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5382D0B263AF5D400ECA9A0 /* PersistanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5382D21263AF5D400ECA9A0 /* Build configuration list for PBXNativeTarget "PersistanceTests" */;
+			buildPhases = (
+				A5382D08263AF5D400ECA9A0 /* Sources */,
+				A5382D09263AF5D400ECA9A0 /* Frameworks */,
+				A5382D0A263AF5D400ECA9A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5382D0F263AF5D400ECA9A0 /* PBXTargetDependency */,
+				A5382D11263AF5D400ECA9A0 /* PBXTargetDependency */,
+			);
+			name = PersistanceTests;
+			productName = PersistanceTests;
+			productReference = A5382D0C263AF5D400ECA9A0 /* PersistanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5382D25263AF63500ECA9A0 /* RaindropTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5382D2D263AF63600ECA9A0 /* Build configuration list for PBXNativeTarget "RaindropTests" */;
+			buildPhases = (
+				A5382D22263AF63500ECA9A0 /* Sources */,
+				A5382D23263AF63500ECA9A0 /* Frameworks */,
+				A5382D24263AF63500ECA9A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5382D2C263AF63500ECA9A0 /* PBXTargetDependency */,
+			);
+			name = RaindropTests;
+			productName = RaindropTests;
+			productReference = A5382D26263AF63500ECA9A0 /* RaindropTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A5AF8A3C263AEC1A006E7080 /* Raindrop */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5AF8A4C263AEC1B006E7080 /* Build configuration list for PBXNativeTarget "Raindrop" */;
@@ -117,10 +299,12 @@
 				A5AF8A39263AEC1A006E7080 /* Sources */,
 				A5AF8A3A263AEC1A006E7080 /* Frameworks */,
 				A5AF8A3B263AEC1A006E7080 /* Resources */,
+				A5382D1B263AF5D400ECA9A0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A5382D18263AF5D400ECA9A0 /* PBXTargetDependency */,
 			);
 			name = Raindrop;
 			productName = Raindrop;
@@ -136,6 +320,17 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					A5382D03263AF5D400ECA9A0 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					A5382D0B263AF5D400ECA9A0 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = A5AF8A3C263AEC1A006E7080;
+					};
+					A5382D25263AF63500ECA9A0 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = A5AF8A3C263AEC1A006E7080;
+					};
 					A5AF8A3C263AEC1A006E7080 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -155,11 +350,35 @@
 			projectRoot = "";
 			targets = (
 				A5AF8A3C263AEC1A006E7080 /* Raindrop */,
+				A5382D25263AF63500ECA9A0 /* RaindropTests */,
+				A5382D03263AF5D400ECA9A0 /* Persistance */,
+				A5382D0B263AF5D400ECA9A0 /* PersistanceTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A5382D02263AF5D400ECA9A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5382D0A263AF5D400ECA9A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5382D24263AF63500ECA9A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5AF8A3B263AEC1A006E7080 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,6 +391,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A5382D00263AF5D400ECA9A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5382D08263AF5D400ECA9A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5382D14263AF5D400ECA9A0 /* PersistanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5382D22263AF63500ECA9A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5382D29263AF63500ECA9A0 /* RaindropTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5AF8A39263AEC1A006E7080 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,7 +427,164 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A5382D0F263AF5D400ECA9A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5382D03263AF5D400ECA9A0 /* Persistance */;
+			targetProxy = A5382D0E263AF5D400ECA9A0 /* PBXContainerItemProxy */;
+		};
+		A5382D11263AF5D400ECA9A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5AF8A3C263AEC1A006E7080 /* Raindrop */;
+			targetProxy = A5382D10263AF5D400ECA9A0 /* PBXContainerItemProxy */;
+		};
+		A5382D18263AF5D400ECA9A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5382D03263AF5D400ECA9A0 /* Persistance */;
+			targetProxy = A5382D17263AF5D400ECA9A0 /* PBXContainerItemProxy */;
+		};
+		A5382D2C263AF63500ECA9A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5AF8A3C263AEC1A006E7080 /* Raindrop */;
+			targetProxy = A5382D2B263AF63500ECA9A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A5382D1C263AF5D400ECA9A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X7WM6K9T24;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Persistance/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikaelweiss.Persistance;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5382D1D263AF5D400ECA9A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X7WM6K9T24;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Persistance/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikaelweiss.Persistance;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5382D1E263AF5D400ECA9A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7WM6K9T24;
+				INFOPLIST_FILE = PersistanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikaelweiss.PersistanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raindrop.app/Raindrop";
+			};
+			name = Debug;
+		};
+		A5382D1F263AF5D400ECA9A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7WM6K9T24;
+				INFOPLIST_FILE = PersistanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikaelweiss.PersistanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raindrop.app/Raindrop";
+			};
+			name = Release;
+		};
+		A5382D2E263AF63600ECA9A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7WM6K9T24;
+				INFOPLIST_FILE = RaindropTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikaelweiss.RaindropTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raindrop.app/Raindrop";
+			};
+			name = Debug;
+		};
+		A5382D2F263AF63600ECA9A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7WM6K9T24;
+				INFOPLIST_FILE = RaindropTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikaelweiss.RaindropTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raindrop.app/Raindrop";
+			};
+			name = Release;
+		};
 		A5AF8A4A263AEC1B006E7080 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -349,6 +748,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A5382D20263AF5D400ECA9A0 /* Build configuration list for PBXNativeTarget "Persistance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5382D1C263AF5D400ECA9A0 /* Debug */,
+				A5382D1D263AF5D400ECA9A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5382D21263AF5D400ECA9A0 /* Build configuration list for PBXNativeTarget "PersistanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5382D1E263AF5D400ECA9A0 /* Debug */,
+				A5382D1F263AF5D400ECA9A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5382D2D263AF63600ECA9A0 /* Build configuration list for PBXNativeTarget "RaindropTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5382D2E263AF63600ECA9A0 /* Debug */,
+				A5382D2F263AF63600ECA9A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A5AF8A38263AEC1A006E7080 /* Build configuration list for PBXProject "Raindrop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
