@@ -11,6 +11,8 @@
 		A5AF8A43263AEC1A006E7080 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF8A42263AEC1A006E7080 /* ContentView.swift */; };
 		A5AF8A45263AEC1B006E7080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5AF8A44263AEC1B006E7080 /* Assets.xcassets */; };
 		A5AF8A48263AEC1B006E7080 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5AF8A47263AEC1B006E7080 /* Preview Assets.xcassets */; };
+		A5AF8A54263AEE5D006E7080 /* CashflowDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF8A53263AEE5D006E7080 /* CashflowDataPoint.swift */; };
+		A5AF8A56263AF404006E7080 /* CashflowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF8A55263AF404006E7080 /* CashflowType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		A5AF8A44263AEC1B006E7080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5AF8A47263AEC1B006E7080 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5AF8A49263AEC1B006E7080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5AF8A53263AEE5D006E7080 /* CashflowDataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashflowDataPoint.swift; sourceTree = "<group>"; };
+		A5AF8A55263AF404006E7080 /* CashflowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashflowType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			children = (
 				A5AF8A50263AEC5F006E7080 /* Presentation */,
 				A5AF8A4F263AEC52006E7080 /* Application */,
+				A5AF8A52263AEE2E006E7080 /* Domain */,
 			);
 			path = Raindrop;
 			sourceTree = "<group>";
@@ -91,6 +96,15 @@
 				A5AF8A44263AEC1B006E7080 /* Assets.xcassets */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		A5AF8A52263AEE2E006E7080 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A5AF8A53263AEE5D006E7080 /* CashflowDataPoint.swift */,
+				A5AF8A55263AF404006E7080 /* CashflowType.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5AF8A54263AEE5D006E7080 /* CashflowDataPoint.swift in Sources */,
 				A5AF8A43263AEC1A006E7080 /* ContentView.swift in Sources */,
+				A5AF8A56263AF404006E7080 /* CashflowType.swift in Sources */,
 				A5AF8A41263AEC1A006E7080 /* RaindropApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
