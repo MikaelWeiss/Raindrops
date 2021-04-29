@@ -33,7 +33,7 @@ public class CoreDataStore {
             fatalError()
         }
         
-        // Managed Object Model - Simple.xcdatamodeld (stored as Simple.momd)
+        // Managed Object Model - Raindrop.xcdatamodeld (stored as Raindrop.momd)
         guard let model = NSManagedObjectModel(contentsOf: modelURL) else {
             os_log(.error, log: .persistence, "Unable to load core data model from url: %@!", modelURL as NSURL)
             fatalError()
@@ -64,7 +64,7 @@ public class CoreDataStore {
             fatalError("Failed to resolve documents directory")
         }
         
-        // Persistant Store - the file that is saved to the device. eg. ``Simple.sqlite``
+        // Persistant Store - the file that is saved to the device. eg. ``Raindrop.sqlite``
         let localStore = NSPersistentStoreDescription(url: docURL.appendingPathComponent("Raindrop.sqlite"))
         
         // Persistent Container - the object that holds the Model, Context, and Coordinator.

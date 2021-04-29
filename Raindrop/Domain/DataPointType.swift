@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum DataPointType {
+enum DataPointType: String {
     case income
     case spending
 }

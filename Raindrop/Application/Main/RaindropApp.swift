@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct RaindropApp: App {
+    static let storage = CoreDataStorage.shared
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

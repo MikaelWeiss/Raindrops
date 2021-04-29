@@ -49,4 +49,28 @@ class DataPoint {
         self.category = category
         self.value = value
     }
+    
+    // MARK: - Reconstitution
+    
+    struct ReconstitutionInfo {
+        let id: UUID
+        let date: Date
+        let description: String
+        let type: String
+        let category: String
+        let value: Decimal
+    }
+    
+    init(with info: ReconstitutionInfo) throws {
+        guard let type = DataPointType(rawValue: info.type) else {
+            throw ReconstitutionError.invalidOption(info.type)
+        }
+        
+        self.id = info.id
+        self.date = info.date
+        self.description = info.description
+        self.type = type
+        self.category = info.category
+        self.value = info.value
+    }
 }
