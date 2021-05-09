@@ -79,13 +79,13 @@ struct DataEntryCell: View {
     }
     
     private var imageToUse: Image? {
-        if type == .selection { return Image("chevron.down") }
+        if type == .selection { return Image(systemName: "chevron.down") }
         if let image = image { return image }
-        if isTyping == true {
-            return Image("xmark.circle.fill")
+        if isTyping {
+            return Image(systemName: "xmark.circle.fill")
         } else {
-            if isRequired == true && state == .error {
-                return Image("exclamationmark.circle.fill")
+            if state == .error {
+                return Image(systemName: "exclamationmark.circle.fill")
             }
         }
         return nil
@@ -181,10 +181,14 @@ struct DataEntryCell: View {
                         $0.tintColor = UIColor(tintColorToUse)
                     }
                     if image == nil, !isTyping {
-                        imageToUse
+                        imageToUse?
+                            .resizable()
+                            .frame(width: 20, height: 20)
                     } else {
                         Button(action: onImageTap, label: {
-                            imageToUse
+                            imageToUse?
+                                .resizable()
+                                .frame(width: 20, height: 20)
                         })
                     }
                 }
