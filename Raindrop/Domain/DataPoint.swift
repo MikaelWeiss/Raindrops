@@ -36,7 +36,7 @@ class DataPoint {
     }
     
     init(id: UUID = UUID(),
-         date: Date = Date(),
+         date: Date = .now,
          description: String,
          type: DataPointType,
          category: String,

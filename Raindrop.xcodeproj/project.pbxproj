@@ -34,11 +34,26 @@
 		A5382D63263B02D800ECA9A0 /* CoreDataStorage+WriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5382D50263B009500ECA9A0 /* CoreDataStorage+WriteTests.swift */; };
 		A5382D64263B03B200ECA9A0 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5382D48263B009500ECA9A0 /* Storage.swift */; };
 		A5AF8A41263AEC1A006E7080 /* RaindropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF8A40263AEC1A006E7080 /* RaindropApp.swift */; };
-		A5AF8A43263AEC1A006E7080 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF8A42263AEC1A006E7080 /* ContentView.swift */; };
 		A5AF8A45263AEC1B006E7080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5AF8A44263AEC1B006E7080 /* Assets.xcassets */; };
 		A5AF8A48263AEC1B006E7080 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5AF8A47263AEC1B006E7080 /* Preview Assets.xcassets */; };
 		A5AF8A54263AEE5D006E7080 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF8A53263AEE5D006E7080 /* DataPoint.swift */; };
 		A5AF8A56263AF404006E7080 /* DataPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF8A55263AF404006E7080 /* DataPointType.swift */; };
+		A5BB52CD26472E3A00F62A6D /* DataEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB52CC26472E3A00F62A6D /* DataEntryCell.swift */; };
+		A5BB52D02647303000F62A6D /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB52CF2647303000F62A6D /* Color+Extensions.swift */; };
+		A5BB52D326473E0700F62A6D /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB52D226473E0700F62A6D /* View+Extensions.swift */; };
+		A5BB52D5264786DE00F62A6D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB52D4264786DE00F62A6D /* String+Extensions.swift */; };
+		A5BC450B26422D6E0076C1E9 /* EditDataPointPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC450526422D6E0076C1E9 /* EditDataPointPresenter.swift */; };
+		A5BC450C26422D6E0076C1E9 /* EditDataPointModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC450626422D6E0076C1E9 /* EditDataPointModels.swift */; };
+		A5BC450D26422D6E0076C1E9 /* EditDataPointScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC450726422D6E0076C1E9 /* EditDataPointScene.swift */; };
+		A5BC450E26422D6E0076C1E9 /* EditDataPointInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC450826422D6E0076C1E9 /* EditDataPointInteractor.swift */; };
+		A5BC450F26422D6E0076C1E9 /* EditDataPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC450926422D6E0076C1E9 /* EditDataPointView.swift */; };
+		A5BC451026422D6E0076C1E9 /* EditDataPointService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC450A26422D6E0076C1E9 /* EditDataPointService.swift */; };
+		A5BC451B264230BE0076C1E9 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC451A264230BE0076C1E9 /* Date+Extensions.swift */; };
+		A5BC451D2642420B0076C1E9 /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC451C2642420B0076C1E9 /* AppEntry.swift */; };
+		A5BC451E264243620076C1E9 /* EditDataPointServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC451426422D7C0076C1E9 /* EditDataPointServiceTests.swift */; };
+		A5BC451F264243620076C1E9 /* EditDataPointInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC451126422D7C0076C1E9 /* EditDataPointInteractorTests.swift */; };
+		A5BC4520264243620076C1E9 /* EditDataPointPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC451326422D7C0076C1E9 /* EditDataPointPresenterTests.swift */; };
+		A5BC4521264243620076C1E9 /* EditDataPointViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC451226422D7C0076C1E9 /* EditDataPointViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,12 +133,27 @@
 		A5382D50263B009500ECA9A0 /* CoreDataStorage+WriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataStorage+WriteTests.swift"; sourceTree = "<group>"; };
 		A5AF8A3D263AEC1A006E7080 /* Raindrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raindrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5AF8A40263AEC1A006E7080 /* RaindropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaindropApp.swift; sourceTree = "<group>"; };
-		A5AF8A42263AEC1A006E7080 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A5AF8A44263AEC1B006E7080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5AF8A47263AEC1B006E7080 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5AF8A49263AEC1B006E7080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5AF8A53263AEE5D006E7080 /* DataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPoint.swift; sourceTree = "<group>"; };
 		A5AF8A55263AF404006E7080 /* DataPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPointType.swift; sourceTree = "<group>"; };
+		A5BB52CC26472E3A00F62A6D /* DataEntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntryCell.swift; sourceTree = "<group>"; };
+		A5BB52CF2647303000F62A6D /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		A5BB52D226473E0700F62A6D /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		A5BB52D4264786DE00F62A6D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		A5BC450526422D6E0076C1E9 /* EditDataPointPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointPresenter.swift; sourceTree = "<group>"; };
+		A5BC450626422D6E0076C1E9 /* EditDataPointModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointModels.swift; sourceTree = "<group>"; };
+		A5BC450726422D6E0076C1E9 /* EditDataPointScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointScene.swift; sourceTree = "<group>"; };
+		A5BC450826422D6E0076C1E9 /* EditDataPointInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointInteractor.swift; sourceTree = "<group>"; };
+		A5BC450926422D6E0076C1E9 /* EditDataPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointView.swift; sourceTree = "<group>"; };
+		A5BC450A26422D6E0076C1E9 /* EditDataPointService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointService.swift; sourceTree = "<group>"; };
+		A5BC451126422D7C0076C1E9 /* EditDataPointInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointInteractorTests.swift; sourceTree = "<group>"; };
+		A5BC451226422D7C0076C1E9 /* EditDataPointViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointViewTests.swift; sourceTree = "<group>"; };
+		A5BC451326422D7C0076C1E9 /* EditDataPointPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointPresenterTests.swift; sourceTree = "<group>"; };
+		A5BC451426422D7C0076C1E9 /* EditDataPointServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointServiceTests.swift; sourceTree = "<group>"; };
+		A5BC451A264230BE0076C1E9 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		A5BC451C2642420B0076C1E9 /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,7 +344,10 @@
 		A5AF8A50263AEC5F006E7080 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				A5AF8A42263AEC1A006E7080 /* ContentView.swift */,
+				A5BC451C2642420B0076C1E9 /* AppEntry.swift */,
+				A5BB52CB26472E0B00F62A6D /* Components */,
+				A5BC450426422D190076C1E9 /* EditDataPoint */,
+				A5BB52D126473DF500F62A6D /* Extensions */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -333,10 +366,54 @@
 		A5AF8A52263AEE2E006E7080 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				A5BC4519264230930076C1E9 /* Extensions */,
 				A5AF8A53263AEE5D006E7080 /* DataPoint.swift */,
 				A5AF8A55263AF404006E7080 /* DataPointType.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		A5BB52CB26472E0B00F62A6D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A5BB52CF2647303000F62A6D /* Color+Extensions.swift */,
+				A5BB52CC26472E3A00F62A6D /* DataEntryCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A5BB52D126473DF500F62A6D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5BB52D226473E0700F62A6D /* View+Extensions.swift */,
+				A5BB52D4264786DE00F62A6D /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5BC450426422D190076C1E9 /* EditDataPoint */ = {
+			isa = PBXGroup;
+			children = (
+				A5BC450826422D6E0076C1E9 /* EditDataPointInteractor.swift */,
+				A5BC451126422D7C0076C1E9 /* EditDataPointInteractorTests.swift */,
+				A5BC450626422D6E0076C1E9 /* EditDataPointModels.swift */,
+				A5BC450526422D6E0076C1E9 /* EditDataPointPresenter.swift */,
+				A5BC451326422D7C0076C1E9 /* EditDataPointPresenterTests.swift */,
+				A5BC450726422D6E0076C1E9 /* EditDataPointScene.swift */,
+				A5BC450A26422D6E0076C1E9 /* EditDataPointService.swift */,
+				A5BC451426422D7C0076C1E9 /* EditDataPointServiceTests.swift */,
+				A5BC450926422D6E0076C1E9 /* EditDataPointView.swift */,
+				A5BC451226422D7C0076C1E9 /* EditDataPointViewTests.swift */,
+			);
+			path = EditDataPoint;
+			sourceTree = "<group>";
+		};
+		A5BC4519264230930076C1E9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5BC451A264230BE0076C1E9 /* Date+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,11 +608,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5BC451E264243620076C1E9 /* EditDataPointServiceTests.swift in Sources */,
 				A5382D63263B02D800ECA9A0 /* CoreDataStorage+WriteTests.swift in Sources */,
 				A5382D62263B02D800ECA9A0 /* CoreDataStorage+ReadTests.swift in Sources */,
 				A5382D5C263B028600ECA9A0 /* DataPointRepositoryTests.swift in Sources */,
+				A5BC451F264243620076C1E9 /* EditDataPointInteractorTests.swift in Sources */,
 				A5382D5A263B019500ECA9A0 /* StorageToDomainTransformerTests.swift in Sources */,
+				A5BC4521264243620076C1E9 /* EditDataPointViewTests.swift in Sources */,
 				A5382D61263B02D800ECA9A0 /* CoreDataStoreStorageFactoryTests.swift in Sources */,
+				A5BC4520264243620076C1E9 /* EditDataPointPresenterTests.swift in Sources */,
 				A5382D5B263B019500ECA9A0 /* DomainToStorageTransformerTests.swift in Sources */,
 				A5382D29263AF63500ECA9A0 /* RaindropTests.swift in Sources */,
 			);
@@ -545,19 +626,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5BC451026422D6E0076C1E9 /* EditDataPointService.swift in Sources */,
 				A5382D5D263B02D400ECA9A0 /* CoreDataStorage+Read.swift in Sources */,
+				A5BC451D2642420B0076C1E9 /* AppEntry.swift in Sources */,
+				A5BC451B264230BE0076C1E9 /* Date+Extensions.swift in Sources */,
+				A5BB52D02647303000F62A6D /* Color+Extensions.swift in Sources */,
 				A5382D64263B03B200ECA9A0 /* Storage.swift in Sources */,
+				A5BC450C26422D6E0076C1E9 /* EditDataPointModels.swift in Sources */,
 				A5AF8A54263AEE5D006E7080 /* DataPoint.swift in Sources */,
 				A5382D57263B017900ECA9A0 /* DataPointRepository.swift in Sources */,
-				A5AF8A43263AEC1A006E7080 /* ContentView.swift in Sources */,
 				A5382D58263B019200ECA9A0 /* StorageToDomainTransformer.swift in Sources */,
 				A5AF8A56263AF404006E7080 /* DataPointType.swift in Sources */,
+				A5BB52CD26472E3A00F62A6D /* DataEntryCell.swift in Sources */,
+				A5BC450B26422D6E0076C1E9 /* EditDataPointPresenter.swift in Sources */,
+				A5BC450E26422D6E0076C1E9 /* EditDataPointInteractor.swift in Sources */,
 				A5382D60263B02D400ECA9A0 /* CoreDataStorage+Write.swift in Sources */,
+				A5BB52D5264786DE00F62A6D /* String+Extensions.swift in Sources */,
+				A5BC450F26422D6E0076C1E9 /* EditDataPointView.swift in Sources */,
 				A5382D59263B019200ECA9A0 /* DomainToStorageTransformer.swift in Sources */,
 				A5382D5F263B02D400ECA9A0 /* CoreDataStoreStorageFactory.swift in Sources */,
 				A5382D5E263B02D400ECA9A0 /* CoreDataStorage.swift in Sources */,
 				A5382D54263B016E00ECA9A0 /* RepositoryRoot.swift in Sources */,
 				A5AF8A41263AEC1A006E7080 /* RaindropApp.swift in Sources */,
+				A5BC450D26422D6E0076C1E9 /* EditDataPointScene.swift in Sources */,
+				A5BB52D326473E0700F62A6D /* View+Extensions.swift in Sources */,
 				A5382D55263B017500ECA9A0 /* RepositoryAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
