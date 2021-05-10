@@ -8,17 +8,56 @@
 import Foundation
 import SwiftUI
 
+class DataEntryCellInfo {
+    var title: String
+    var infoMessage: String?
+    var image: Image?
+    var tintColor: Color
+    var type: DataEntryCellType
+    var isRequired: Bool
+    var onCommit: () -> Void
+    var onSelectionTap: () -> Void
+    
+    init(title: String = "",
+         infoMessage: String? = nil,
+         attributedText: Text? = nil,
+         image: Image? = nil,
+         tintColor: Color = .appTintColor,
+         type: DataEntryCellType = .textEntry,
+         isRequired: Bool = false,
+         onCommit: @escaping () -> Void = {},
+         onSelectionTap: @escaping () -> Void = {}) {
+        
+        self.title = title
+        self.infoMessage = infoMessage
+        self.image = image
+        self.tintColor = tintColor
+        self.type = type
+        self.isRequired = isRequired
+        self.onCommit = onCommit
+        self.onSelectionTap = onSelectionTap
+    }
+}
+
+enum DataEntryCellType {
+    case textEntry
+    case selection
+}
+
+enum DataEntryCellState {
+    case error
+    case normal
+    
+    mutating func toggle() {
+        if self == .error {
+            self = .normal
+        } else {
+            self = .error
+        }
+    }
+}
+
 struct DataEntryCell: View {
-    
-    enum DataEntryType {
-        case textEntry
-        case selection
-    }
-    
-    enum DataEntryViewState {
-        case error
-        case normal
-    }
     
     @State private var isTyping = false
     
@@ -28,26 +67,45 @@ struct DataEntryCell: View {
     private let attributedText: Text?
     private let image: Image?
     private let tintColor: Color
-    private let state: DataEntryViewState
-    private let type: DataEntryType
+    private let state: DataEntryCellState
+    private let type: DataEntryCellType
     private let isRequired: Bool
     private let onTextChanged: (String) -> Void
     private let onCommit: () -> Void
     private let onSelectionTap: () -> Void
     
-    init(title: String,
+    init(text: String = "",
+         onTextChanged: @escaping (String) -> Void = { _ in },
+         state: DataEntryCellState = .normal,
+         attributedText: Text? = nil,
+         info: DataEntryCellInfo = DataEntryCellInfo()) {
+        self.text = text
+        self.state = state
+        self.onTextChanged = onTextChanged
+        
+        self.title = info.title
+        self.infoMessage = info.infoMessage
+        self.attributedText = attributedText
+        self.image = info.image
+        self.tintColor = info.tintColor
+        self.type = info.type
+        self.isRequired = info.isRequired
+        self.onCommit = info.onCommit
+        self.onSelectionTap = info.onSelectionTap
+    }
+    
+    init(title: String = "",
          infoMessage: String? = nil,
-         text: String,
+         text: String = "",
          attributedText: Text? = nil,
          image: Image? = nil,
          tintColor: Color = .appTintColor,
-         state: DataEntryViewState = .normal,
-         type: DataEntryType = .textEntry,
+         state: DataEntryCellState = .normal,
+         type: DataEntryCellType = .textEntry,
          isRequired: Bool = false,
          onTextChanged: @escaping (String) -> Void = { _ in },
-         onCommit: @escaping () -> Void = {},
-         onSelectionTap: @escaping () -> Void = {}) {
-        
+         onCommit: @escaping () -> Void = { },
+         onSelectionTap: @escaping () -> Void = { }) {
         self.title = title
         self.infoMessage = infoMessage
         self.text = text
@@ -61,8 +119,6 @@ struct DataEntryCell: View {
         self.onCommit = onCommit
         self.onSelectionTap = onSelectionTap
     }
-    
-    // Have the Init contain a function that returns "DataEntryCellValues" (a class)
     
     private func onTap() {
         if type == .selection {
@@ -256,21 +312,22 @@ struct PreviewableDataEntryCell: View {
     @State private var text2 = ""
     @State private var text3 = ""
     @State private var isRequired = false
-    @State private var isInError = true
+    @State private var state = DataEntryCellState.error
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 0) {
-                DataEntryCell(title: "Some title", text: text1, isRequired: true, onTextChanged: { text1 = $0 })
-                    .padding(.horizontal)
-                DataEntryCell(title: "Some title", infoMessage: "Try this format: mm/dd/yyyy", text: text2, state: isInError ? .error : .normal, isRequired: isRequired, onTextChanged: { text2 = $0 })
-                    .padding(.horizontal)
-                Button("isRequired", action: { isRequired.toggle() })
-                Button("isInError", action: {  isInError.toggle() })
-                
-                ForEach(1..<15) { _ in
-                    DataEntryCell(title: "Some title", text: text3, onTextChanged: { text3 = $0 })
-                        .padding(.horizontal)
+        NavigationView {
+            ScrollView {
+                VStack(spacing: 0) {
+                    DataEntryCell(
+                        title: "Some title",
+                        text: text1,
+                        state: state,
+                        isRequired: isRequired,
+                        onTextChanged: { text1 = $0 })
+                        .padding()
+                    Button("Toggle error") {
+                        state.toggle()
+                    }
                 }
             }
         }

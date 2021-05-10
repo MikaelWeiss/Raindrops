@@ -42,6 +42,7 @@
 		A5BB52D02647303000F62A6D /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB52CF2647303000F62A6D /* Color+Extensions.swift */; };
 		A5BB52D326473E0700F62A6D /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB52D226473E0700F62A6D /* View+Extensions.swift */; };
 		A5BB52D5264786DE00F62A6D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB52D4264786DE00F62A6D /* String+Extensions.swift */; };
+		A5BB52D72647872B00F62A6D /* DecimalEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB52D62647872B00F62A6D /* DecimalEntryCell.swift */; };
 		A5BC450B26422D6E0076C1E9 /* EditDataPointPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC450526422D6E0076C1E9 /* EditDataPointPresenter.swift */; };
 		A5BC450C26422D6E0076C1E9 /* EditDataPointModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC450626422D6E0076C1E9 /* EditDataPointModels.swift */; };
 		A5BC450D26422D6E0076C1E9 /* EditDataPointScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC450726422D6E0076C1E9 /* EditDataPointScene.swift */; };
@@ -142,6 +143,7 @@
 		A5BB52CF2647303000F62A6D /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		A5BB52D226473E0700F62A6D /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		A5BB52D4264786DE00F62A6D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		A5BB52D62647872B00F62A6D /* DecimalEntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalEntryCell.swift; sourceTree = "<group>"; };
 		A5BC450526422D6E0076C1E9 /* EditDataPointPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointPresenter.swift; sourceTree = "<group>"; };
 		A5BC450626422D6E0076C1E9 /* EditDataPointModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointModels.swift; sourceTree = "<group>"; };
 		A5BC450726422D6E0076C1E9 /* EditDataPointScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointScene.swift; sourceTree = "<group>"; };
@@ -378,6 +380,7 @@
 			children = (
 				A5BB52CF2647303000F62A6D /* Color+Extensions.swift */,
 				A5BB52CC26472E3A00F62A6D /* DataEntryCell.swift */,
+				A5BB52D62647872B00F62A6D /* DecimalEntryCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -646,6 +649,7 @@
 				A5382D59263B019200ECA9A0 /* DomainToStorageTransformer.swift in Sources */,
 				A5382D5F263B02D400ECA9A0 /* CoreDataStoreStorageFactory.swift in Sources */,
 				A5382D5E263B02D400ECA9A0 /* CoreDataStorage.swift in Sources */,
+				A5BB52D72647872B00F62A6D /* DecimalEntryCell.swift in Sources */,
 				A5382D54263B016E00ECA9A0 /* RepositoryRoot.swift in Sources */,
 				A5AF8A41263AEC1A006E7080 /* RaindropApp.swift in Sources */,
 				A5BC450D26422D6E0076C1E9 /* EditDataPointScene.swift in Sources */,
