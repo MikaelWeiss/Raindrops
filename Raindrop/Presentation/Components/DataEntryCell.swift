@@ -147,14 +147,18 @@ struct DataEntryCell: View {
         return nil
     }
     
+    private var textIsEmpty: Bool {
+        text == ""
+    }
+    
     private var attributedTextToUse: Text? {
-        if text != "" { return attributedText }
+        if !textIsEmpty { return attributedText }
         return nil
     }
     
     private var tintColorToUse: Color {
         if state == .error { return .appErrorColor }
-        if isTyping, isRequired, text == "" { return .appErrorColor }
+        if isTyping, isRequired, textIsEmpty { return .appErrorColor }
         if isTyping, state == .normal { return tintColor }
         return .standardGray
     }
@@ -163,27 +167,27 @@ struct DataEntryCell: View {
         if let message = infoMessage, message.isEmpty == false {
             let textView = Text(message).font(.system(size: 12, weight: .semibold))
             if state == .error { return textView }
-            if isTyping, isRequired, text == "" { return textView }
-            if !isTyping, state == .error, isRequired == true, text == "" { return textView }
+            if isTyping, isRequired, textIsEmpty { return textView }
+            if !isTyping, state == .error, isRequired == true, textIsEmpty { return textView }
             return nil
         }
         return nil
     }
     
     private var requiredTextToUse: Text? {
-        if !isTyping, isRequired, text == "" {
+        if !isTyping, isRequired, textIsEmpty {
             return Text("Required")
         }
         return nil
     }
     private var titleFontSizeToUse: CGFloat {
-        if !isTyping && text == "" {
+        if !isTyping && textIsEmpty {
             return 18
         }
         return 12
     }
     private var titleFontWeightToUse: Font.Weight {
-        if !isTyping && text == "" {
+        if !isTyping && textIsEmpty {
             return .regular
         }
         return .medium
@@ -195,7 +199,7 @@ struct DataEntryCell: View {
     }
     
     private var showSmallTitle: Bool {
-        isTyping || (!isTyping && text != "")
+        isTyping || (!isTyping && !textIsEmpty)
     }
     
     private var titleOffsetToUse: OffSet {

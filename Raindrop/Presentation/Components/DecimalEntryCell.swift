@@ -26,17 +26,11 @@ struct DecimalEntryCell: View {
         return NumberFormatter.currency.string(for: value) ?? ""
     }
     
-    private var currencyTextToUse: Text? {
-        guard let currencySymbol = Locale.current.currencySymbol else { return nil }
-        return Text(currencySymbol)
-    }
-    
     var body: some View {
         DataEntryCell(
             text: textToUse,
             onTextChanged: onTextChanged,
             state: state,
-//            attributedText: currencyTextToUse,
             info: info)
     }
     
