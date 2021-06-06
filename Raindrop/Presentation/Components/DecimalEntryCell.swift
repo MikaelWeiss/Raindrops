@@ -8,22 +8,29 @@
 import SwiftUI
 
 struct DecimalEntryCell: View {
+    let currencySymbol = Locale.current.currencySymbol ?? "$"
     @State private var state: DataEntryCellState = .normal
-    let value: Decimal?
-    let onValueChanged: (Decimal?) -> Void
-    let info: DataEntryCellInfo
+    private let givenState: DataEntryCellState
+    private let value: Decimal?
+    private let onValueChanged: (Decimal?) -> Void
+    private let info: DataEntryCellInfo
     
     init(value: Decimal? = nil,
-         onValueChanged: @escaping (Decimal?) -> Void = { _ in },
-         info: DataEntryCellInfo = DataEntryCellInfo()) {
+         state: DataEntryCellState = .normal,
+         info: DataEntryCellInfo = DataEntryCellInfo(),
+         onValueChanged: @escaping (Decimal?) -> Void = { _ in }) {
         self.value = value
-        self.onValueChanged = onValueChanged
+        self.givenState = state
         self.info = info
+        self.onValueChanged = onValueChanged
     }
     
     private var textToUse: String {
-        let value = value ?? .nan
-        return NumberFormatter.currency.string(for: value) ?? ""
+        NumberFormatter.decimal.string(for: value) ?? ""
+    }
+    
+    private var stateToUse: DataEntryCellState {
+        givenState == .error ? .error : state
     }
     
     var body: some View {
@@ -31,12 +38,18 @@ struct DecimalEntryCell: View {
             text: textToUse,
             onTextChanged: onTextChanged,
             state: state,
+            attributedText: Text(currencySymbol),
             info: info)
     }
     
-    func onTextChanged(_ inputText: String) {
-        let number = NumberFormatter.currency.number(from: inputText)
-        onValueChanged(number?.decimalValue)
+    private func onTextChanged(_ inputText: String) {
+        let num = NumberFormatter.decimal.number(from: inputText)
+        onValueChanged(num?.decimalValue)
+//        if num == nil, value != nil {
+//            state = .error
+//        } else {
+//            state = .normal
+//        }
     }
 }
 
@@ -49,12 +62,12 @@ struct DecimalEntryCell_Previews: PreviewProvider {
 }
 
 extension NumberFormatter {
-    class var currency: NumberFormatter {
+    class var decimal: NumberFormatter {
         let numberFormatter = NumberFormatter()
         numberFormatter.locale = Locale.current
-        numberFormatter.numberStyle = .currency
+        numberFormatter.numberStyle = .decimal
         numberFormatter.minimumFractionDigits = 0
-        numberFormatter.maximumFractionDigits = 0
+        numberFormatter.maximumFractionDigits = 2
         return numberFormatter
     }
 }

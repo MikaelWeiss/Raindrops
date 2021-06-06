@@ -5,7 +5,6 @@
 //  Created by Mikael Weiss on 4/14/21.
 //
 
-import Foundation
 import SwiftUI
 
 class DataEntryCellInfo {
@@ -225,7 +224,7 @@ struct DataEntryCell: View {
                     Rectangle()
                         .frame(width: showSmallTitle ? smallTitlePaddingWidthToUse : 0)
                         .frame(height: 4)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color(.systemBackground))
                     
                     Spacer()
                 }
@@ -234,7 +233,7 @@ struct DataEntryCell: View {
                 .padding(.leading, titleOffsetToUse.x - 4)
                 .zIndex(1)
                 
-                HStack {
+                HStack(spacing: 0) {
                     // Text Field and Image View
                     attributedTextToUse
                     LegacyTextField(text: binding, isFirstResponder: $isTyping, onCommit: onCommit) {
@@ -329,6 +328,14 @@ struct PreviewableDataEntryCell: View {
                         isRequired: isRequired,
                         onTextChanged: { text1 = $0 })
                         .padding()
+                    DataEntryCell(
+                        title: "Some title",
+                        infoMessage: state == .error ? "Oof" : "",
+                        text: text2,
+                        state: state,
+                        isRequired: isRequired,
+                        onTextChanged: { text2 = $0 })
+                        .padding(.horizontal)
                     Button("Toggle error") {
                         state.toggle()
                     }
@@ -343,6 +350,7 @@ struct PreviewableDataEntryCell: View {
 struct DataEntryCell_Previews: PreviewProvider {
     static var previews: some View {
         PreviewableDataEntryCell()
+            .colorScheme(.dark)
     }
 }
 
