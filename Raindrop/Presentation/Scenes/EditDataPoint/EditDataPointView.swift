@@ -2,7 +2,7 @@
 //  EditDataPointView.swift
 //  Raindrop
 //
-//  Created by Mikael Weiss on 6/10/21.
+//  Created by Mikael Weiss on 6/15/21.
 //  Copyright © 2021 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
@@ -11,7 +11,7 @@ import SwiftUI
 extension EditDataPoint {
     
     struct ContentView: View {
-        
+        typealias Theme = EditDataPoint.Theme
         @ObservedObject var viewModel: ViewModel
         let interactor: EditDataPointInteracting
         

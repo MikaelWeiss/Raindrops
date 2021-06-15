@@ -11,7 +11,7 @@ import SwiftUI
 extension ___VARIABLE_sceneName___ {
     
     struct ContentView: View {
-        
+        typealias Theme = EditDataPoint.Theme
         @ObservedObject var viewModel: ViewModel
         let interactor: ___VARIABLE_sceneName___Interacting
         
