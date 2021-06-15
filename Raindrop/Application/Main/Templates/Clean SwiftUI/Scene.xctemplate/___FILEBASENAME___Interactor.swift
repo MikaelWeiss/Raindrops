@@ -28,7 +28,7 @@ extension ___VARIABLE_sceneName___ {
         let presenter: ___VARIABLE_sceneName___Presenting
         
         func dismiss() {
-            router.routeToPrevious()
+            presenter.presentDismiss()
         }
         
         func save() {

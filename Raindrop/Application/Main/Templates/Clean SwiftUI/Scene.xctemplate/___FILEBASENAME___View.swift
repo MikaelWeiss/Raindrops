@@ -26,27 +26,28 @@ extension ___VARIABLE_sceneName___ {
                     .overlay(
                         RoundedRectangle(cornerRadius: 15, style: .continuous)
                             .stroke(lineWidth: 2)
-                            .fill(viewModel.theme.tintColor)
+                            .fill(Theme.tintColor)
                     )
                     .padding()
             }
-            .navigationTitle(viewModel.theme.sceneTitle)
+            .navigationTitle(Theme.sceneTitle)
             .navigationBarItems(leading: cancelButton, trailing: saveButton)
-            .accentColor(viewModel.theme.tintColor)
+            .navigationBarBackButtonHidden(true)
+            .accentColor(Theme.tintColor)
             .errorSheet($viewModel.error)
         }
         
         var cancelButton: some View {
             Button(action: interactor.dismiss) {
-                Text(viewModel.theme.backButtonTitle)
-                    .accentColor(viewModel.theme.tintColor)
+                Text(Theme.backButtonTitle)
+                    .accentColor(Theme.tintColor)
             }
         }
         
         var saveButton: some View {
             Button(action: interactor.dismiss) {
-                Text(viewModel.theme.saveButtonTitle)
-                    .accentColor(viewModel.theme.tintColor)
+                Text(Theme.saveButtonTitle)
+                    .accentColor(Theme.tintColor)
             }.disabled(!viewModel.canSave)
         }
     }
@@ -57,7 +58,7 @@ extension ___VARIABLE_sceneName___ {
 struct ___VARIABLE_sceneName____Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            ___VARIABLE_sceneName___.Scene().view(preview: true)
+            ___VARIABLE_sceneName___.Scene().view(preview: true, isPresented: .constant(true))
         }
     }
 }

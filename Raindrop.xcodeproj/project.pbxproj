@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5304E1E267953F400EC906C /* EditDataPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5304E1D267953F400EC906C /* EditDataPointView.swift */; };
 		A5382D0D263AF5D400ECA9A0 /* Persistence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5382D04263AF5D400ECA9A0 /* Persistence.framework */; };
 		A5382D14263AF5D400ECA9A0 /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5382D13263AF5D400ECA9A0 /* PersistenceTests.swift */; };
 		A5382D16263AF5D400ECA9A0 /* Persistance.h in Headers */ = {isa = PBXBuildFile; fileRef = A5382D06263AF5D400ECA9A0 /* Persistance.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,11 +37,9 @@
 		A53E512F26744E36002E4BEE /* ErrorSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E512D26744C26002E4BEE /* ErrorSheetView.swift */; };
 		A53E513026744E36002E4BEE /* ErrorSheetModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E512E26744C26002E4BEE /* ErrorSheetModels.swift */; };
 		A553603326794898006C93EC /* EditDataPointPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553602926794898006C93EC /* EditDataPointPresenter.swift */; };
-		A553603426794898006C93EC /* EditDataPointRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553602A26794898006C93EC /* EditDataPointRouter.swift */; };
 		A553603526794898006C93EC /* EditDataPointModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553602B26794898006C93EC /* EditDataPointModels.swift */; };
 		A553603626794898006C93EC /* EditDataPointScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553602C26794898006C93EC /* EditDataPointScene.swift */; };
 		A553603726794898006C93EC /* EditDataPointInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553602D26794898006C93EC /* EditDataPointInteractor.swift */; };
-		A553603826794898006C93EC /* EditDataPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553602E26794898006C93EC /* EditDataPointView.swift */; };
 		A553603A26794898006C93EC /* EditDataPointService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553603026794898006C93EC /* EditDataPointService.swift */; };
 		A553603C267948A7006C93EC /* EditDataPointPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553602F26794898006C93EC /* EditDataPointPresenterTests.swift */; };
 		A553603D267948A7006C93EC /* EditDataPointServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553603126794898006C93EC /* EditDataPointServiceTests.swift */; };
@@ -103,6 +102,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A5304E1D267953F400EC906C /* EditDataPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointView.swift; sourceTree = "<group>"; };
 		A5382D04263AF5D400ECA9A0 /* Persistence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Persistence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5382D06263AF5D400ECA9A0 /* Persistance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Persistance.h; sourceTree = "<group>"; };
 		A5382D07263AF5D400ECA9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -142,7 +142,6 @@
 		A5535FFF2679457E006C93EC /* ___FILEBASENAME___Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Service.swift"; sourceTree = "<group>"; };
 		A55360002679457E006C93EC /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		A55360032679457E006C93EC /* ___FILEBASENAME___InteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___InteractorTests.swift"; sourceTree = "<group>"; };
-		A55360042679457E006C93EC /* ___FILEBASENAME___ViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewTests.swift"; sourceTree = "<group>"; };
 		A55360052679457E006C93EC /* ___FILEBASENAME___PresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___PresenterTests.swift"; sourceTree = "<group>"; };
 		A55360072679457E006C93EC /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		A55360082679457E006C93EC /* ___FILEBASENAME___ServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ServiceTests.swift"; sourceTree = "<group>"; };
@@ -152,11 +151,9 @@
 		A55360272679486A006C93EC /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
 		A553602826794898006C93EC /* EditDataPointInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointInteractorTests.swift; sourceTree = "<group>"; };
 		A553602926794898006C93EC /* EditDataPointPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointPresenter.swift; sourceTree = "<group>"; };
-		A553602A26794898006C93EC /* EditDataPointRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointRouter.swift; sourceTree = "<group>"; };
 		A553602B26794898006C93EC /* EditDataPointModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointModels.swift; sourceTree = "<group>"; };
 		A553602C26794898006C93EC /* EditDataPointScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointScene.swift; sourceTree = "<group>"; };
 		A553602D26794898006C93EC /* EditDataPointInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointInteractor.swift; sourceTree = "<group>"; };
-		A553602E26794898006C93EC /* EditDataPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointView.swift; sourceTree = "<group>"; };
 		A553602F26794898006C93EC /* EditDataPointPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointPresenterTests.swift; sourceTree = "<group>"; };
 		A553603026794898006C93EC /* EditDataPointService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointService.swift; sourceTree = "<group>"; };
 		A553603126794898006C93EC /* EditDataPointServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointServiceTests.swift; sourceTree = "<group>"; };
@@ -369,7 +366,6 @@
 				A55360032679457E006C93EC /* ___FILEBASENAME___InteractorTests.swift */,
 				A55360052679457E006C93EC /* ___FILEBASENAME___PresenterTests.swift */,
 				A55360082679457E006C93EC /* ___FILEBASENAME___ServiceTests.swift */,
-				A55360042679457E006C93EC /* ___FILEBASENAME___ViewTests.swift */,
 			);
 			path = "Unit Tests.xctemplate";
 			sourceTree = "<group>";
@@ -482,11 +478,10 @@
 				A553602B26794898006C93EC /* EditDataPointModels.swift */,
 				A553602926794898006C93EC /* EditDataPointPresenter.swift */,
 				A553602F26794898006C93EC /* EditDataPointPresenterTests.swift */,
-				A553602A26794898006C93EC /* EditDataPointRouter.swift */,
 				A553602C26794898006C93EC /* EditDataPointScene.swift */,
 				A553603026794898006C93EC /* EditDataPointService.swift */,
 				A553603126794898006C93EC /* EditDataPointServiceTests.swift */,
-				A553602E26794898006C93EC /* EditDataPointView.swift */,
+				A5304E1D267953F400EC906C /* EditDataPointView.swift */,
 			);
 			path = EditDataPoint;
 			sourceTree = "<group>";
@@ -715,14 +710,12 @@
 				A53E513026744E36002E4BEE /* ErrorSheetModels.swift in Sources */,
 				A5382D64263B03B200ECA9A0 /* Storage.swift in Sources */,
 				A553603726794898006C93EC /* EditDataPointInteractor.swift in Sources */,
-				A553603426794898006C93EC /* EditDataPointRouter.swift in Sources */,
 				A5AF8A54263AEE5D006E7080 /* DataPoint.swift in Sources */,
 				A5382D57263B017900ECA9A0 /* DataPointRepository.swift in Sources */,
 				A5382D58263B019200ECA9A0 /* StorageToDomainTransformer.swift in Sources */,
 				A553603526794898006C93EC /* EditDataPointModels.swift in Sources */,
 				A5AF8A56263AF404006E7080 /* DataPointType.swift in Sources */,
 				A5BB52CD26472E3A00F62A6D /* DataEntryCell.swift in Sources */,
-				A553603826794898006C93EC /* EditDataPointView.swift in Sources */,
 				A553603326794898006C93EC /* EditDataPointPresenter.swift in Sources */,
 				A53E512F26744E36002E4BEE /* ErrorSheetView.swift in Sources */,
 				A5382D60263B02D400ECA9A0 /* CoreDataStorage+Write.swift in Sources */,
@@ -733,6 +726,7 @@
 				A5382D5E263B02D400ECA9A0 /* CoreDataStorage.swift in Sources */,
 				A5382D54263B016E00ECA9A0 /* RepositoryRoot.swift in Sources */,
 				A5AF8A41263AEC1A006E7080 /* RaindropApp.swift in Sources */,
+				A5304E1E267953F400EC906C /* EditDataPointView.swift in Sources */,
 				A5BB52D326473E0700F62A6D /* View+Extensions.swift in Sources */,
 				A5382D55263B017500ECA9A0 /* RepositoryAction.swift in Sources */,
 			);

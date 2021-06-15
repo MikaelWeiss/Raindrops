@@ -11,20 +11,22 @@ import SwiftUI
 extension ___VARIABLE_sceneName___ {
     
     class ViewModel: ObservableObject {
-        let theme = Theme()
+        let isPresented: Binding<Bool>
         @Published var canSave: Bool = false
         @Published var error: ErrorSheet.ViewModel?
         @Published var text: String = ""
         @Published var textFieldState: ValidationError?
+        
+        init(isPresented: Binding<Bool>) {
+            self.isPresented = isPresented
+        }
     }
     
-    // MARK: - Theme: non-changing visual information that should be accessible to view via ViewModel
-    
     struct Theme {
-        let tintColor = Color.appTintColor
-        let sceneTitle = Strings.sceneTitle
-        let backButtonTitle = Strings.cancelButtonTitle
-        let saveButtonTitle = Strings.saveButtonTitle
+        static let tintColor = Color.appTintColor
+        static let sceneTitle = Strings.sceneTitle
+        static let backButtonTitle = Strings.cancelButtonTitle
+        static let saveButtonTitle = Strings.saveButtonTitle
     }
     
     enum Strings {

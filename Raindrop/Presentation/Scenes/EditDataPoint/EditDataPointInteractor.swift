@@ -19,10 +19,9 @@ extension EditDataPoint {
     struct Interactor: EditDataPointInteracting {
         let service: EditDataPointService
         let presenter: EditDataPointPresenting
-        let router: EditDataPointRouting
         
         func dismiss() {
-            router.routeToPrevious()
+            presenter.presentDismiss()
         }
         
         func save() {

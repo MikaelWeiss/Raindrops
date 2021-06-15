@@ -14,11 +14,10 @@ enum ___VARIABLE_sceneName___ {
     
     struct Scene {
         
-        func view(preview: Bool = false) -> some View {
+        func view(preview: Bool = false, isPresented: Binding<Bool>) -> some View {
             let service: ___VARIABLE_sceneName___Service = preview ? PreviewService() : buildService()
-            let presenter = Presenter()
-            let router = Router()
-            let interactor = Interactor(service: service, presenter: presenter, router: router)
+            let presenter = Presenter(viewModel: ViewModel(isPresented: isPresented))
+            let interactor = Interactor(service: service, presenter: presenter)
             let view = ContentView(viewModel: presenter.viewModel, interactor: interactor)
             return view
         }

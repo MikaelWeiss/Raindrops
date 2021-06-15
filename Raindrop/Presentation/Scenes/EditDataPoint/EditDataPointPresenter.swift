@@ -12,13 +12,14 @@ protocol EditDataPointPresenting {
     func present(canSave: Bool)
     func present(updatedText: String, error: Error?)
     func present(error: EditDataPoint.ServiceError)
+    func presentDismiss()
 }
 
 extension EditDataPoint {
     
     struct Presenter: EditDataPointPresenting {
         
-        let viewModel = ViewModel()
+        let viewModel: ViewModel
         
         func present(canSave: Bool) {
             viewModel.canSave = canSave
@@ -31,6 +32,10 @@ extension EditDataPoint {
         
         func present(error: ServiceError) {
             viewModel.error = Strings.displayError(for: error)
+        }
+        
+        func presentDismiss() {
+            viewModel.isPresented.wrappedValue = false
         }
     }
 }
