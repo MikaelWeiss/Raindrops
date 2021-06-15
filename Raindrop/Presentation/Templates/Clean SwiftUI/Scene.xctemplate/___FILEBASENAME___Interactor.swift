@@ -11,13 +11,6 @@ import Foundation
 protocol ___VARIABLE_sceneName___Interacting {
     func dismiss()
     func save()
-    func createDefaultError()
-    func createServiceError()
-}
-
-protocol ___VARIABLE_sceneName___Interacting {
-    func dismiss()
-    func save()
     func updateText(_ value: String)
 }
 

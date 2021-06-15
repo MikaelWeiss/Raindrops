@@ -45,7 +45,7 @@ extension ___VARIABLE_sceneName___ {
         }
         
         var saveButton: some View {
-            Button(action: interactor.dismiss) {
+            Button(action: interactor.save) {
                 Text(Theme.saveButtonTitle)
                     .accentColor(Theme.tintColor)
             }.disabled(!viewModel.canSave)

@@ -42,4 +42,3 @@ extension ___VARIABLE_sceneName___ {
         }
     }
 }
-
