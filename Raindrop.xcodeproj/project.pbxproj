@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A504063D2673EE1F00918F7C /* EditDataPointServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559D26D2672B2E800FAE5DC /* EditDataPointServiceTests.swift */; };
+		A504063E2673EE1F00918F7C /* EditDataPointPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559D26B2672B2E800FAE5DC /* EditDataPointPresenterTests.swift */; };
+		A504063F2673EE2000918F7C /* EditDataPointInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559D2642672B2E800FAE5DC /* EditDataPointInteractorTests.swift */; };
 		A5382D0D263AF5D400ECA9A0 /* Persistence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5382D04263AF5D400ECA9A0 /* Persistence.framework */; };
 		A5382D14263AF5D400ECA9A0 /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5382D13263AF5D400ECA9A0 /* PersistenceTests.swift */; };
 		A5382D16263AF5D400ECA9A0 /* Persistance.h in Headers */ = {isa = PBXBuildFile; fileRef = A5382D06263AF5D400ECA9A0 /* Persistance.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +36,15 @@
 		A5382D62263B02D800ECA9A0 /* CoreDataStorage+ReadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5382D4A263B009500ECA9A0 /* CoreDataStorage+ReadTests.swift */; };
 		A5382D63263B02D800ECA9A0 /* CoreDataStorage+WriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5382D50263B009500ECA9A0 /* CoreDataStorage+WriteTests.swift */; };
 		A5382D64263B03B200ECA9A0 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5382D48263B009500ECA9A0 /* Storage.swift */; };
+		A53E512F26744E36002E4BEE /* ErrorSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E512D26744C26002E4BEE /* ErrorSheetView.swift */; };
+		A53E513026744E36002E4BEE /* ErrorSheetModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E512E26744C26002E4BEE /* ErrorSheetModels.swift */; };
+		A54A02E2267929A800D109C7 /* EditDataPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559D26A2672B2E800FAE5DC /* EditDataPointView.swift */; };
+		A559D26F2672B2E800FAE5DC /* EditDataPointPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559D2652672B2E800FAE5DC /* EditDataPointPresenter.swift */; };
+		A559D2702672B2E800FAE5DC /* EditDataPointRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559D2662672B2E800FAE5DC /* EditDataPointRouter.swift */; };
+		A559D2712672B2E800FAE5DC /* EditDataPointModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559D2672672B2E800FAE5DC /* EditDataPointModels.swift */; };
+		A559D2722672B2E800FAE5DC /* EditDataPointScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559D2682672B2E800FAE5DC /* EditDataPointScene.swift */; };
+		A559D2732672B2E800FAE5DC /* EditDataPointInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559D2692672B2E800FAE5DC /* EditDataPointInteractor.swift */; };
+		A559D2762672B2E800FAE5DC /* EditDataPointService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A559D26C2672B2E800FAE5DC /* EditDataPointService.swift */; };
 		A5AF8A41263AEC1A006E7080 /* RaindropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF8A40263AEC1A006E7080 /* RaindropApp.swift */; };
 		A5AF8A45263AEC1B006E7080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5AF8A44263AEC1B006E7080 /* Assets.xcassets */; };
 		A5AF8A48263AEC1B006E7080 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5AF8A47263AEC1B006E7080 /* Preview Assets.xcassets */; };
@@ -42,7 +54,6 @@
 		A5BB52D02647303000F62A6D /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB52CF2647303000F62A6D /* Color+Extensions.swift */; };
 		A5BB52D326473E0700F62A6D /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB52D226473E0700F62A6D /* View+Extensions.swift */; };
 		A5BB52D5264786DE00F62A6D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB52D4264786DE00F62A6D /* String+Extensions.swift */; };
-		A5BB52D72647872B00F62A6D /* DecimalEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB52D62647872B00F62A6D /* DecimalEntryCell.swift */; };
 		A5BC451B264230BE0076C1E9 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC451A264230BE0076C1E9 /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +132,34 @@
 		A5382D4E263B009500ECA9A0 /* CoreDataStoreStorageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStoreStorageFactory.swift; sourceTree = "<group>"; };
 		A5382D4F263B009500ECA9A0 /* CoreDataStorage+Read.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataStorage+Read.swift"; sourceTree = "<group>"; };
 		A5382D50263B009500ECA9A0 /* CoreDataStorage+WriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataStorage+WriteTests.swift"; sourceTree = "<group>"; };
+		A53E512D26744C26002E4BEE /* ErrorSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorSheetView.swift; sourceTree = "<group>"; };
+		A53E512E26744C26002E4BEE /* ErrorSheetModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorSheetModels.swift; sourceTree = "<group>"; };
+		A5535FF82679457E006C93EC /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		A5535FF92679457E006C93EC /* ___FILEBASENAME___Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Presenter.swift"; sourceTree = "<group>"; };
+		A5535FFA2679457E006C93EC /* ___FILEBASENAME___Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Models.swift"; sourceTree = "<group>"; };
+		A5535FFB2679457E006C93EC /* ___FILEBASENAME___Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Scene.swift"; sourceTree = "<group>"; };
+		A5535FFC2679457E006C93EC /* ___FILEBASENAME___Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Interactor.swift"; sourceTree = "<group>"; };
+		A5535FFD2679457E006C93EC /* ___FILEBASENAME___View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___View.swift"; sourceTree = "<group>"; };
+		A5535FFE2679457E006C93EC /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		A5535FFF2679457E006C93EC /* ___FILEBASENAME___Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Service.swift"; sourceTree = "<group>"; };
+		A55360002679457E006C93EC /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		A55360022679457E006C93EC /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		A55360032679457E006C93EC /* ___FILEBASENAME___InteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___InteractorTests.swift"; sourceTree = "<group>"; };
+		A55360042679457E006C93EC /* ___FILEBASENAME___ViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewTests.swift"; sourceTree = "<group>"; };
+		A55360052679457E006C93EC /* ___FILEBASENAME___PresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___PresenterTests.swift"; sourceTree = "<group>"; };
+		A55360062679457E006C93EC /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		A55360072679457E006C93EC /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		A55360082679457E006C93EC /* ___FILEBASENAME___ServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ServiceTests.swift"; sourceTree = "<group>"; };
+		A559D2642672B2E800FAE5DC /* EditDataPointInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointInteractorTests.swift; sourceTree = "<group>"; };
+		A559D2652672B2E800FAE5DC /* EditDataPointPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointPresenter.swift; sourceTree = "<group>"; };
+		A559D2662672B2E800FAE5DC /* EditDataPointRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointRouter.swift; sourceTree = "<group>"; };
+		A559D2672672B2E800FAE5DC /* EditDataPointModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointModels.swift; sourceTree = "<group>"; };
+		A559D2682672B2E800FAE5DC /* EditDataPointScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointScene.swift; sourceTree = "<group>"; };
+		A559D2692672B2E800FAE5DC /* EditDataPointInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointInteractor.swift; sourceTree = "<group>"; };
+		A559D26A2672B2E800FAE5DC /* EditDataPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointView.swift; sourceTree = "<group>"; };
+		A559D26B2672B2E800FAE5DC /* EditDataPointPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointPresenterTests.swift; sourceTree = "<group>"; };
+		A559D26C2672B2E800FAE5DC /* EditDataPointService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointService.swift; sourceTree = "<group>"; };
+		A559D26D2672B2E800FAE5DC /* EditDataPointServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointServiceTests.swift; sourceTree = "<group>"; };
 		A5AF8A3D263AEC1A006E7080 /* Raindrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raindrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5AF8A40263AEC1A006E7080 /* RaindropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaindropApp.swift; sourceTree = "<group>"; };
 		A5AF8A44263AEC1B006E7080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,7 +171,6 @@
 		A5BB52CF2647303000F62A6D /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		A5BB52D226473E0700F62A6D /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		A5BB52D4264786DE00F62A6D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		A5BB52D62647872B00F62A6D /* DecimalEntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalEntryCell.swift; sourceTree = "<group>"; };
 		A5BC451A264230BE0076C1E9 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -280,6 +318,62 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		A53E512C26744C26002E4BEE /* ErrorSheet */ = {
+			isa = PBXGroup;
+			children = (
+				A53E512D26744C26002E4BEE /* ErrorSheetView.swift */,
+				A53E512E26744C26002E4BEE /* ErrorSheetModels.swift */,
+			);
+			path = ErrorSheet;
+			sourceTree = "<group>";
+		};
+		A5535FF526794560006C93EC /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				A5535FF62679457E006C93EC /* Clean SwiftUI */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		A5535FF62679457E006C93EC /* Clean SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				A5535FF72679457E006C93EC /* Scene.xctemplate */,
+				A55360012679457E006C93EC /* Unit Tests.xctemplate */,
+			);
+			path = "Clean SwiftUI";
+			sourceTree = "<group>";
+		};
+		A5535FF72679457E006C93EC /* Scene.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				A55360002679457E006C93EC /* TemplateInfo.plist */,
+				A5535FFE2679457E006C93EC /* TemplateIcon.png */,
+				A5535FF82679457E006C93EC /* TemplateIcon@2x.png */,
+				A5535FFC2679457E006C93EC /* ___FILEBASENAME___Interactor.swift */,
+				A5535FFA2679457E006C93EC /* ___FILEBASENAME___Models.swift */,
+				A5535FF92679457E006C93EC /* ___FILEBASENAME___Presenter.swift */,
+				A5535FFB2679457E006C93EC /* ___FILEBASENAME___Scene.swift */,
+				A5535FFF2679457E006C93EC /* ___FILEBASENAME___Service.swift */,
+				A5535FFD2679457E006C93EC /* ___FILEBASENAME___View.swift */,
+			);
+			path = Scene.xctemplate;
+			sourceTree = "<group>";
+		};
+		A55360012679457E006C93EC /* Unit Tests.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				A55360022679457E006C93EC /* TemplateIcon@2x.png */,
+				A55360032679457E006C93EC /* ___FILEBASENAME___InteractorTests.swift */,
+				A55360042679457E006C93EC /* ___FILEBASENAME___ViewTests.swift */,
+				A55360052679457E006C93EC /* ___FILEBASENAME___PresenterTests.swift */,
+				A55360062679457E006C93EC /* TemplateIcon.png */,
+				A55360072679457E006C93EC /* TemplateInfo.plist */,
+				A55360082679457E006C93EC /* ___FILEBASENAME___ServiceTests.swift */,
+			);
+			path = "Unit Tests.xctemplate";
+			sourceTree = "<group>";
+		};
 		A5AF8A34263AEC1A006E7080 = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +436,7 @@
 		A5AF8A51263AEC76006E7080 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				A5535FF526794560006C93EC /* Templates */,
 				A5AF8A46263AEC1B006E7080 /* Preview Content */,
 				A5AF8A40263AEC1A006E7080 /* RaindropApp.swift */,
 				A5AF8A49263AEC1B006E7080 /* Info.plist */,
@@ -363,8 +458,8 @@
 		A5BB52CB26472E0B00F62A6D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A53E512C26744C26002E4BEE /* ErrorSheet */,
 				A5BB52CC26472E3A00F62A6D /* DataEntryCell.swift */,
-				A5BB52D62647872B00F62A6D /* DecimalEntryCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -382,6 +477,16 @@
 		A5BC450426422D190076C1E9 /* EditDataPoint */ = {
 			isa = PBXGroup;
 			children = (
+				A559D2692672B2E800FAE5DC /* EditDataPointInteractor.swift */,
+				A559D2642672B2E800FAE5DC /* EditDataPointInteractorTests.swift */,
+				A559D2672672B2E800FAE5DC /* EditDataPointModels.swift */,
+				A559D2652672B2E800FAE5DC /* EditDataPointPresenter.swift */,
+				A559D26B2672B2E800FAE5DC /* EditDataPointPresenterTests.swift */,
+				A559D2662672B2E800FAE5DC /* EditDataPointRouter.swift */,
+				A559D2682672B2E800FAE5DC /* EditDataPointScene.swift */,
+				A559D26C2672B2E800FAE5DC /* EditDataPointService.swift */,
+				A559D26D2672B2E800FAE5DC /* EditDataPointServiceTests.swift */,
+				A559D26A2672B2E800FAE5DC /* EditDataPointView.swift */,
 			);
 			path = EditDataPoint;
 			sourceTree = "<group>";
@@ -586,10 +691,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A504063D2673EE1F00918F7C /* EditDataPointServiceTests.swift in Sources */,
 				A5382D63263B02D800ECA9A0 /* CoreDataStorage+WriteTests.swift in Sources */,
 				A5382D62263B02D800ECA9A0 /* CoreDataStorage+ReadTests.swift in Sources */,
+				A504063F2673EE2000918F7C /* EditDataPointInteractorTests.swift in Sources */,
 				A5382D5C263B028600ECA9A0 /* DataPointRepositoryTests.swift in Sources */,
 				A5382D5A263B019500ECA9A0 /* StorageToDomainTransformerTests.swift in Sources */,
+				A504063E2673EE1F00918F7C /* EditDataPointPresenterTests.swift in Sources */,
 				A5382D61263B02D800ECA9A0 /* CoreDataStoreStorageFactoryTests.swift in Sources */,
 				A5382D5B263B019500ECA9A0 /* DomainToStorageTransformerTests.swift in Sources */,
 				A5382D29263AF63500ECA9A0 /* RaindropTests.swift in Sources */,
@@ -603,22 +711,30 @@
 				A5382D5D263B02D400ECA9A0 /* CoreDataStorage+Read.swift in Sources */,
 				A5BC451B264230BE0076C1E9 /* Date+Extensions.swift in Sources */,
 				A5BB52D02647303000F62A6D /* Color+Extensions.swift in Sources */,
+				A53E513026744E36002E4BEE /* ErrorSheetModels.swift in Sources */,
 				A5382D64263B03B200ECA9A0 /* Storage.swift in Sources */,
 				A5AF8A54263AEE5D006E7080 /* DataPoint.swift in Sources */,
 				A5382D57263B017900ECA9A0 /* DataPointRepository.swift in Sources */,
 				A5382D58263B019200ECA9A0 /* StorageToDomainTransformer.swift in Sources */,
 				A5AF8A56263AF404006E7080 /* DataPointType.swift in Sources */,
 				A5BB52CD26472E3A00F62A6D /* DataEntryCell.swift in Sources */,
+				A53E512F26744E36002E4BEE /* ErrorSheetView.swift in Sources */,
+				A559D2702672B2E800FAE5DC /* EditDataPointRouter.swift in Sources */,
+				A559D2722672B2E800FAE5DC /* EditDataPointScene.swift in Sources */,
 				A5382D60263B02D400ECA9A0 /* CoreDataStorage+Write.swift in Sources */,
 				A5BB52D5264786DE00F62A6D /* String+Extensions.swift in Sources */,
+				A54A02E2267929A800D109C7 /* EditDataPointView.swift in Sources */,
 				A5382D59263B019200ECA9A0 /* DomainToStorageTransformer.swift in Sources */,
 				A5382D5F263B02D400ECA9A0 /* CoreDataStoreStorageFactory.swift in Sources */,
 				A5382D5E263B02D400ECA9A0 /* CoreDataStorage.swift in Sources */,
-				A5BB52D72647872B00F62A6D /* DecimalEntryCell.swift in Sources */,
 				A5382D54263B016E00ECA9A0 /* RepositoryRoot.swift in Sources */,
 				A5AF8A41263AEC1A006E7080 /* RaindropApp.swift in Sources */,
+				A559D26F2672B2E800FAE5DC /* EditDataPointPresenter.swift in Sources */,
 				A5BB52D326473E0700F62A6D /* View+Extensions.swift in Sources */,
+				A559D2732672B2E800FAE5DC /* EditDataPointInteractor.swift in Sources */,
+				A559D2712672B2E800FAE5DC /* EditDataPointModels.swift in Sources */,
 				A5382D55263B017500ECA9A0 /* RepositoryAction.swift in Sources */,
+				A559D2762672B2E800FAE5DC /* EditDataPointService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,12 +956,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -895,11 +1012,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};

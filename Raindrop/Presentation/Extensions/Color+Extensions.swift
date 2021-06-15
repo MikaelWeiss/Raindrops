@@ -8,8 +8,24 @@
 import SwiftUI
 
 extension Color {
-    static var appTintColor = Color("AccentColor")
-    static var standardGray = Color("standardGray")
-    static var appErrorColor = Color("appErrorColor")
-    static var deepBlue = Color("deepBlue")
+    static let appTintColor = Color("AccentColor")
+    static let appErrorColor = Color("appErrorColor")
+    static let appGrayLight = Color("appGrayLight")
+    static let appGrayDark = Color("appGrayDark")
+    static let appWhite = Color("appWhite")
+    static let standardGray = Color("standardGray")
+    static let deepBlue = Color("deepBlue")
+}
+
+extension Color {
+    /// Example: Color(hex: 0xA10115)
+    init(hex: UInt, alpha: Double = 1) {
+        self.init(
+            .sRGB,
+            red: Double((hex >> 16) & 0xff) / 255,
+            green: Double((hex >> 08) & 0xff) / 255,
+            blue: Double((hex >> 00) & 0xff) / 255,
+            opacity: alpha
+        )
+    }
 }

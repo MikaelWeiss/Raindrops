@@ -14,3 +14,9 @@ extension String {
         return size.width
     }
 }
+
+extension String: View {
+    public var body: some View {
+        Text(self)
+    }
+}

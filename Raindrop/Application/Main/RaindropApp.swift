@@ -14,7 +14,7 @@ struct RaindropApp: App {
     
     var body: some Scene {
         WindowGroup {
-            DecimalEntryCell(value: value, onValueChanged: { value = $0 })
+            DataEntryCell()
         }
     }
 }

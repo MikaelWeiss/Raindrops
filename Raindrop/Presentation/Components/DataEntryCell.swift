@@ -314,7 +314,7 @@ struct PreviewableDataEntryCell: View {
     @State private var text1 = "Some Input"
     @State private var text2 = ""
     @State private var text3 = ""
-    @State private var isRequired = false
+    @State private var isRequired = true
     @State private var state = DataEntryCellState.error
     
     var body: some View {
@@ -338,6 +338,9 @@ struct PreviewableDataEntryCell: View {
                         .padding(.horizontal)
                     Button("Toggle error") {
                         state.toggle()
+                    }
+                    Button("Toggle isRequired") {
+                        isRequired.toggle()
                     }
                 }
             }
