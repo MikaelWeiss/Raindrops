@@ -422,9 +422,10 @@
 		A5AF8A50263AEC5F006E7080 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				A513A10A266B29190011F702 /* Scenes */,
 				A5BB52CB26472E0B00F62A6D /* Components */,
 				A5BB52D126473DF500F62A6D /* Extensions */,
+				A513A10A266B29190011F702 /* Scenes */,
+				A5535FF526794560006C93EC /* Templates */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -432,7 +433,6 @@
 		A5AF8A51263AEC76006E7080 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				A5535FF526794560006C93EC /* Templates */,
 				A5AF8A46263AEC1B006E7080 /* Preview Content */,
 				A5AF8A40263AEC1A006E7080 /* RaindropApp.swift */,
 				A5AF8A49263AEC1B006E7080 /* Info.plist */,
