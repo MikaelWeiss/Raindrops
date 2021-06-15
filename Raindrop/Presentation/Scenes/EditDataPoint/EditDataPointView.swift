@@ -44,7 +44,7 @@ extension EditDataPoint {
         }
         
         var saveButton: some View {
-            Button(action: interactor.dismiss) {
+            Button(action: interactor.save) {
                 Text(viewModel.theme.saveButtonTitle)
                     .accentColor(viewModel.theme.tintColor)
             }.disabled(!viewModel.canSave)

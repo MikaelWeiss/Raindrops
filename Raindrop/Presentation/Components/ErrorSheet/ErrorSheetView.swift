@@ -51,10 +51,10 @@ enum ErrorSheet {
                             // Dismiss Button
                             Button(action: dismiss) {
                                 Text(viewModel.dismissButtonTitle.uppercased())
-                                    .font(.system(size: 24, weight: .bold, design: .rounded))
+                                    .font(.system(size: 20, weight: .bold, design: .rounded))
                                     .frame(maxWidth: .infinity)
                                     .frame(height: 64)
-                                    .accentColor(.black)
+                                    .accentColor(.appGrayDark)
                             }
                             .background(Color.deepBlue.cornerRadius(33))
                         }
