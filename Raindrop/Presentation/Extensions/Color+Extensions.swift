@@ -11,6 +11,7 @@ extension Color {
     static let appTintColor = Color("AccentColor")
     static let appErrorColor = Color("appErrorColor")
     static let appGrayLight = Color("appGrayLight")
+    static let appGrayMedium = Color("appGrayMedium")
     static let appGrayDark = Color("appGrayDark")
     static let appWhite = Color("appWhite")
     static let standardGray = Color("standardGray")

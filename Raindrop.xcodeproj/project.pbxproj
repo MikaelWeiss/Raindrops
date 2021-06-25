@@ -51,6 +51,13 @@
 		A5BB52D326473E0700F62A6D /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB52D226473E0700F62A6D /* View+Extensions.swift */; };
 		A5BB52D5264786DE00F62A6D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB52D4264786DE00F62A6D /* String+Extensions.swift */; };
 		A5BC451B264230BE0076C1E9 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC451A264230BE0076C1E9 /* Date+Extensions.swift */; };
+		A5D1C7C4267AC00500A7B175 /* ViewDataPointsOverviewScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D1C7BE267AC00500A7B175 /* ViewDataPointsOverviewScene.swift */; };
+		A5D1C7C5267AC00500A7B175 /* ViewDataPointsOverviewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D1C7BF267AC00500A7B175 /* ViewDataPointsOverviewModels.swift */; };
+		A5D1C7C6267AC00500A7B175 /* ViewDataPointsOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D1C7C0267AC00500A7B175 /* ViewDataPointsOverviewView.swift */; };
+		A5D1C7C7267AC00500A7B175 /* ViewDataPointsOverviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D1C7C1267AC00500A7B175 /* ViewDataPointsOverviewInteractor.swift */; };
+		A5D1C7C8267AC00500A7B175 /* ViewDataPointsOverviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D1C7C2267AC00500A7B175 /* ViewDataPointsOverviewService.swift */; };
+		A5D1C7C9267AC00500A7B175 /* ViewDataPointsOverviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D1C7C3267AC00500A7B175 /* ViewDataPointsOverviewPresenter.swift */; };
+		A5D1C7CD267AC17E00A7B175 /* StandardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D1C7CC267AC17E00A7B175 /* StandardButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +170,13 @@
 		A5BB52D226473E0700F62A6D /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		A5BB52D4264786DE00F62A6D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		A5BC451A264230BE0076C1E9 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		A5D1C7BE267AC00500A7B175 /* ViewDataPointsOverviewScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDataPointsOverviewScene.swift; sourceTree = "<group>"; };
+		A5D1C7BF267AC00500A7B175 /* ViewDataPointsOverviewModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDataPointsOverviewModels.swift; sourceTree = "<group>"; };
+		A5D1C7C0267AC00500A7B175 /* ViewDataPointsOverviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDataPointsOverviewView.swift; sourceTree = "<group>"; };
+		A5D1C7C1267AC00500A7B175 /* ViewDataPointsOverviewInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDataPointsOverviewInteractor.swift; sourceTree = "<group>"; };
+		A5D1C7C2267AC00500A7B175 /* ViewDataPointsOverviewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDataPointsOverviewService.swift; sourceTree = "<group>"; };
+		A5D1C7C3267AC00500A7B175 /* ViewDataPointsOverviewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDataPointsOverviewPresenter.swift; sourceTree = "<group>"; };
+		A5D1C7CC267AC17E00A7B175 /* StandardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +216,7 @@
 		A513A10A266B29190011F702 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A5D1C7BD267AC00500A7B175 /* ViewDataPointsOverview */,
 				A5BC450426422D190076C1E9 /* EditDataPoint */,
 			);
 			path = Scenes;
@@ -450,6 +465,7 @@
 			children = (
 				A53E512C26744C26002E4BEE /* ErrorSheet */,
 				A5BB52CC26472E3A00F62A6D /* DataEntryCell.swift */,
+				A5D1C7CC267AC17E00A7B175 /* StandardButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -483,6 +499,19 @@
 				A5BC451A264230BE0076C1E9 /* Date+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5D1C7BD267AC00500A7B175 /* ViewDataPointsOverview */ = {
+			isa = PBXGroup;
+			children = (
+				A5D1C7C1267AC00500A7B175 /* ViewDataPointsOverviewInteractor.swift */,
+				A5D1C7BF267AC00500A7B175 /* ViewDataPointsOverviewModels.swift */,
+				A5D1C7C3267AC00500A7B175 /* ViewDataPointsOverviewPresenter.swift */,
+				A5D1C7BE267AC00500A7B175 /* ViewDataPointsOverviewScene.swift */,
+				A5D1C7C2267AC00500A7B175 /* ViewDataPointsOverviewService.swift */,
+				A5D1C7C0267AC00500A7B175 /* ViewDataPointsOverviewView.swift */,
+			);
+			path = ViewDataPointsOverview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -692,10 +721,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5382D5D263B02D400ECA9A0 /* CoreDataStorage+Read.swift in Sources */,
+				A5D1C7C9267AC00500A7B175 /* ViewDataPointsOverviewPresenter.swift in Sources */,
 				A5304E3D2679589600EC906C /* EditDataPointPresenter.swift in Sources */,
 				A5BC451B264230BE0076C1E9 /* Date+Extensions.swift in Sources */,
+				A5D1C7C7267AC00500A7B175 /* ViewDataPointsOverviewInteractor.swift in Sources */,
+				A5D1C7C4267AC00500A7B175 /* ViewDataPointsOverviewScene.swift in Sources */,
 				A5BB52D02647303000F62A6D /* Color+Extensions.swift in Sources */,
 				A53E513026744E36002E4BEE /* ErrorSheetModels.swift in Sources */,
+				A5D1C7CD267AC17E00A7B175 /* StandardButton.swift in Sources */,
+				A5D1C7C5267AC00500A7B175 /* ViewDataPointsOverviewModels.swift in Sources */,
 				A5382D64263B03B200ECA9A0 /* Storage.swift in Sources */,
 				A5AF8A54263AEE5D006E7080 /* DataPoint.swift in Sources */,
 				A5382D57263B017900ECA9A0 /* DataPointRepository.swift in Sources */,
@@ -716,7 +750,9 @@
 				A5BB52D326473E0700F62A6D /* View+Extensions.swift in Sources */,
 				A5304E402679589600EC906C /* EditDataPointInteractor.swift in Sources */,
 				A5304E3E2679589600EC906C /* EditDataPointModels.swift in Sources */,
+				A5D1C7C6267AC00500A7B175 /* ViewDataPointsOverviewView.swift in Sources */,
 				A5382D55263B017500ECA9A0 /* RepositoryAction.swift in Sources */,
+				A5D1C7C8267AC00500A7B175 /* ViewDataPointsOverviewService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

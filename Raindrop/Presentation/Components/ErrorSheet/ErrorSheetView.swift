@@ -49,14 +49,7 @@ enum ErrorSheet {
                                 .foregroundColor(.appGrayLight)
                             
                             // Dismiss Button
-                            Button(action: dismiss) {
-                                Text(viewModel.dismissButtonTitle.uppercased())
-                                    .font(.system(size: 20, weight: .bold, design: .rounded))
-                                    .frame(maxWidth: .infinity)
-                                    .frame(height: 64)
-                                    .accentColor(.appGrayDark)
-                            }
-                            .background(Color.deepBlue.cornerRadius(33))
+                            StandardButton(title: viewModel.dismissButtonTitle, action: dismiss)
                         }
                         .padding(.horizontal, 24)
                         .padding(.bottom, 50)
