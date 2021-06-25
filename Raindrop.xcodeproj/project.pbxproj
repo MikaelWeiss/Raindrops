@@ -112,6 +112,7 @@
 		A5304E3A2679589600EC906C /* EditDataPointInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointInteractor.swift; sourceTree = "<group>"; };
 		A5304E3B2679589600EC906C /* EditDataPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointView.swift; sourceTree = "<group>"; };
 		A5304E3C2679589600EC906C /* EditDataPointService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataPointService.swift; sourceTree = "<group>"; };
+		A534E5D526865EBB00B75686 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		A5382D04263AF5D400ECA9A0 /* Persistence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Persistence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5382D06263AF5D400ECA9A0 /* Persistance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Persistance.h; sourceTree = "<group>"; };
 		A5382D07263AF5D400ECA9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -382,6 +383,7 @@
 		A5AF8A34263AEC1A006E7080 = {
 			isa = PBXGroup;
 			children = (
+				A534E5D526865EBB00B75686 /* CHANGELOG.md */,
 				A5AF8A3F263AEC1A006E7080 /* Raindrop */,
 				A5382D27263AF63500ECA9A0 /* RaindropTests */,
 				A5382D05263AF5D400ECA9A0 /* Persistence */,
