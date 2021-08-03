@@ -1,42 +1,11 @@
 //
 //  DataEntryCell.swift
-//  Elements
+//  Raindrop
 //
 //  Created by Mikael Weiss on 4/14/21.
 //
 
 import SwiftUI
-
-class DataEntryCellInfo {
-    var title: String
-    var infoMessage: String?
-    var image: Image?
-    var tintColor: Color
-    var type: DataEntryCellType
-    var isRequired: Bool
-    var onCommit: () -> Void
-    var onSelectionTap: () -> Void
-    
-    init(title: String = "",
-         infoMessage: String? = nil,
-         attributedText: Text? = nil,
-         image: Image? = nil,
-         tintColor: Color = .appTintColor,
-         type: DataEntryCellType = .textEntry,
-         isRequired: Bool = false,
-         onCommit: @escaping () -> Void = {},
-         onSelectionTap: @escaping () -> Void = {}) {
-        
-        self.title = title
-        self.infoMessage = infoMessage
-        self.image = image
-        self.tintColor = tintColor
-        self.type = type
-        self.isRequired = isRequired
-        self.onCommit = onCommit
-        self.onSelectionTap = onSelectionTap
-    }
-}
 
 enum DataEntryCellType {
     case textEntry
@@ -59,11 +28,11 @@ enum DataEntryCellState {
 struct DataEntryCell: View {
     
     @State private var isTyping = false
-    
+
     private let title: String
     private let infoMessage: String?
     private let text: String
-    private let attributedText: Text?
+    private let attributedText: String?
     private let image: Image?
     private let tintColor: Color
     private let state: DataEntryCellState
@@ -73,30 +42,10 @@ struct DataEntryCell: View {
     private let onCommit: () -> Void
     private let onSelectionTap: () -> Void
     
-    init(text: String = "",
-         onTextChanged: @escaping (String) -> Void = { _ in },
-         state: DataEntryCellState = .normal,
-         attributedText: Text? = nil,
-         info: DataEntryCellInfo = DataEntryCellInfo()) {
-        self.text = text
-        self.state = state
-        self.onTextChanged = onTextChanged
-        
-        self.title = info.title
-        self.infoMessage = info.infoMessage
-        self.attributedText = attributedText
-        self.image = info.image
-        self.tintColor = info.tintColor
-        self.type = info.type
-        self.isRequired = info.isRequired
-        self.onCommit = info.onCommit
-        self.onSelectionTap = info.onSelectionTap
-    }
-    
     init(title: String = "",
          infoMessage: String? = nil,
          text: String = "",
-         attributedText: Text? = nil,
+         attributedText: String? = nil,
          image: Image? = nil,
          tintColor: Color = .appTintColor,
          state: DataEntryCellState = .normal,
@@ -151,7 +100,9 @@ struct DataEntryCell: View {
     }
     
     private var attributedTextToUse: Text? {
-        if !textIsEmpty { return attributedText }
+        if let attributedText = attributedText, !textIsEmpty {
+            return Text(attributedText)
+        }
         return nil
     }
     
@@ -235,10 +186,12 @@ struct DataEntryCell: View {
                 
                 HStack(spacing: 0) {
                     // Text Field and Image View
-                    attributedTextToUse
+                    attributedTextToUse?.padding(.trailing, 2)
+                    
                     LegacyTextField(text: binding, isFirstResponder: $isTyping, onCommit: onCommit) {
                         $0.tintColor = UIColor(tintColorToUse)
                     }
+                    
                     if image == nil, !isTyping {
                         imageToUse?
                             .resizable()
@@ -255,8 +208,8 @@ struct DataEntryCell: View {
                 
                 // The border view
                 .overlay(
-                    RoundedRectangle(cornerRadius: 5, style: .continuous)
-                        .stroke(tintColorToUse, lineWidth: 1)
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .strokeBorder(tintColorToUse, lineWidth: 1)
                 )
                 .frame(height: 64)
                 .zIndex(0)

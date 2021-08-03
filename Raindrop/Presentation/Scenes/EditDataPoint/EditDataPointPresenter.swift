@@ -27,7 +27,13 @@ extension EditDataPoint {
         
         func present(updatedText: String, error: Error?) {
             viewModel.text = updatedText
-            viewModel.textFieldState = error as? ValidationError
+            if let error = error as? ValidationError {
+                switch error {
+                case .empty: viewModel.textFieldInfoMessage = Strings.emptyErrorInfoMessage
+                case .invalid: viewModel.textFieldInfoMessage = Strings.invalidErrorInfoMessage
+                }
+                viewModel.textFieldState = .error
+            }
         }
         
         func present(error: ServiceError) {

@@ -1,9 +1,8 @@
 //
 //  ErrorSheetView.swift
-//  Elements
+//  Raindrop
 //
 //  Created by Mikael Weiss on 5/3/21.
-//  Copyright © 2021 Elements Advisors, LLC. All rights reserved.
 //
 
 import SwiftUI
@@ -16,9 +15,8 @@ enum ErrorSheet {
             ZStack {
                 if viewModel != nil {
                     LinearGradient(gradient: Gradient(colors: [Color.black, Color.black.opacity(0.32)]), startPoint: .bottom, endPoint: .top)
-                        .edgesIgnoringSafeArea(.all)
                         .ignoresSafeArea()
-                        .onTapGesture { dismiss() }
+                        .onTapGesture(perform: dismiss)
                         .transition(.opacity)
                 }
                 if let viewModel = viewModel {
@@ -38,7 +36,6 @@ enum ErrorSheet {
                                 })
                                     .foregroundColor(tintColor)
                             }
-                            .padding(.top, 24)
                             
                             // Body text
                             Text(viewModel.body)
@@ -49,9 +46,11 @@ enum ErrorSheet {
                                 .foregroundColor(.appGrayLight)
                             
                             // Dismiss Button
-                            StandardButton(title: viewModel.dismissButtonTitle, action: dismiss)
+                            StandardButton(
+                                title: viewModel.dismissButtonTitle,
+                                action: dismiss)
                         }
-                        .padding(.horizontal, 24)
+                        .padding([.horizontal, .top], 24)
                         .padding(.bottom, 50)
                         .background(
                             RoundedRectangle(cornerRadius: 30)
@@ -75,19 +74,12 @@ enum ErrorSheet {
 
 // MARK: - View Extension
 
-private struct ErrorSheetViewModifier: ViewModifier {
-    @Binding var viewModel: ErrorSheet.ViewModel?
-    func body(content: Content) -> some View {
-        ZStack {
-            content
-            ErrorSheet.ErrorSheetView(viewModel: $viewModel)
-        }
-    }
-}
-
 extension View {
     func errorSheet(_ viewModel: Binding<ErrorSheet.ViewModel?>) -> some View {
-        modifier(ErrorSheetViewModifier(viewModel: viewModel))
+        ZStack {
+            self
+            ErrorSheet.ErrorSheetView(viewModel: viewModel)
+        }
     }
 }
 

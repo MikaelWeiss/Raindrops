@@ -15,20 +15,15 @@ extension EditDataPoint {
         @ObservedObject var viewModel: ViewModel
         let interactor: EditDataPointInteracting
         
-        var text: Binding<String> {
-            Binding(get: { viewModel.text }, set: interactor.updateText)
-        }
-        
         var body: some View {
             ScrollView {
-                TextField("Hallo", text: text)
-                    .padding()
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 15, style: .continuous)
-                            .stroke(lineWidth: 2)
-                            .fill(Theme.tintColor)
-                    )
-                    .padding()
+                DataEntryCell(
+                    title: Theme.textFieldTitle,
+                    infoMessage: viewModel.textFieldInfoMessage,
+                    text: viewModel.text,
+                    attributedText: Theme.currencySymbol,
+                    state: viewModel.textFieldState,
+                    onTextChanged: interactor.updateText)
             }
             .navigationTitle(Theme.sceneTitle)
             .navigationBarItems(leading: cancelButton, trailing: saveButton)

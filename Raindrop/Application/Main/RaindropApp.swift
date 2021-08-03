@@ -10,7 +10,6 @@ import SwiftUI
 @main
 struct RaindropApp: App {
     static let storage = CoreDataStorage.shared
-    @State private var value: Decimal? = 5
     
     var body: some Scene {
         WindowGroup {
